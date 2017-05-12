@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="Stylesheet" href="/stylesheets/jHtmlArea.css" type="text/css"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+  </head>
+  <body>
+    <section class="container">
+      <span>URL : </span> <input type="text" placeholder="Insert your link here...">
+      <button id="submit"> Submit </button>
+      <button id="switch"> Html View </button>
+      <div class="content">
+        <h3 id="title">Captora Elements</h3>
+        <span><button id="titlebtn">Add $title</button><span class="undo" id="undo_title"><i class="fa fa-undo" aria-hidden="true"></i></span></span>
+        <span class="m-l-20"><button id="trackbtn">Add Track.js</button><span class="undo" id="undo_track"><i class="fa fa-undo" aria-hidden="true"></i></span></span>
+        <span class="m-l-20"><button id="modalbtn">Add Modal.css</button><span class="undo" id="undo_modal"><i class="fa fa-undo" aria-hidden="true"></i></span></span>
+        <span class="m-l-20"><button id="actionme">Add Modal.css</button><span class="undo" id="undo_modal"><i class="fa fa-undo" aria-hidden="true"></i></span></span>
+      </div>
+    </section>
+
+    <!--<textarea style="width:100%; height: 800px"></textarea>-->
+
+    <!--<iframe src="/request?url=https://www.captora.com" id='iframeelm' style="width:100%; height: 800px" sandbox="allow-scripts allow-same-origin"></iframe>-->
+    <iframe id='iframeelm' sandbox="allow-scripts allow-same-origin"></iframe>
+    <textarea name="textareaelm" cols="30" rows="10" id='textareaelm' value='test' ></textarea>
+
+    <div id="mainbody" style="display: none;">
+
+    </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!--<script type="text/javascript" src="javascripts/jHtmlArea-0.8.js"></script>-->
+    <script src="javascripts/mainScript.js"></script>
+  </body>
+</html>

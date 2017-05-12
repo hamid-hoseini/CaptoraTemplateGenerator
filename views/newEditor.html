@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="markitup/skins/live/style.css" />
+    <link rel="stylesheet" type="text/css" href="markitup/sets/html/style.css" />
+</head>
+<body>
+<textarea id="html" cols="80" rows="20">
+	<!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    </head>
+    <body>
+    <p>thiks is a test!</p>
+    <h1>thiks is a test!</h1>
+    </body>
+    </html>
+</textarea>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="markitup/jquery.markitup.js"></script>
+<script type="text/javascript" src="markitup/sets/html/set.js"></script>
+
+<script language="javascript">
+    $(document).ready(function()	{
+        $('#html').markItUp(myHtmlSettings);
+    });
+</script>
+</body>
+</html>
